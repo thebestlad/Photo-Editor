@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <center>
+    <h1>Photo Editor</h1>
+    <h2>Once done, click to save.</h2>
+</center>
+    <div class="container">
+        <div class="div1">
+            <img
+                src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80">
+        </div>
+        <div class="div2">
+            <h4>Brightness</h4>
+            <input type="range" id="brightness" min="0" max="500" onchange="brightness()">
+            <h4>Invert</h4>
+            <input type="range" id="invert" min="0" max="100" onchange="invert()">
+            <h4>Sepia</h4>
+            <input type="range" id="sepia" min="0" max="100" onchange="sepia()">
+            <h4>Saturate</h4>
+            <input type="range" id="saturate" min="0" max="100" onchange="saturate()">
+            <h4>Grayscale</h4>
+            <input type="range" id="grayscale" min="0" max="100" onchange="grayscale()">
+            <h4>Contrast</h4>
+            <input type="range" id="contrast" min="0" max="100" onchange="contrast()">
+       <h4>Height</h4>
+       <button onclick="height()">Height</button>
+       <h4>Width</h4>
+       <button onclick="width()">Width</button>
+        </div>
+    </div>
+
+<footer style="text-align: center; position: relative; bottom:0; background-color: white; height: 50px;"><p>© 2021-2030, Aarav.com, Inc. or its affiliates</p></footer>
+    <script src="script1.js"></script>
+</body>
+
+</html>
